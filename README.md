@@ -5,8 +5,8 @@ new address. Here I am going to show you how you can keep your ngrok session run
 forever. 
 
 **Please note, this is a hack and probably you should be good if you are prototyping something 
-for your own such as home automation etc. Please consider paid subcription of ngrok if you are
-thinking to use it in production environment or commerical use.**
+for your own such as home automation etc. Please consider paid subscription of ngrok if you are
+thinking to use it in production environment or commercial use.**
 
 ![iot](https://user-images.githubusercontent.com/9275193/51857830-3ef9ab80-2301-11e9-955f-96a706c52380.png)
 

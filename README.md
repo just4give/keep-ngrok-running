@@ -4,9 +4,9 @@ your ngrok session expires in 8 hours. You need to restart the ngrok process to 
 new address. Here I am going to show you how you can keep your ngrok session running 
 forever. 
 
-** Please note, this is a hack and probably you should be good if you are prototyping something 
+**Please note, this is a hack and probably you should be good if you are prototyping something 
 for your own such as home automation etc. Please consider paid subcription of ngrok if you are
-thinking to use it in production environment or commerical use. **
+thinking to use it in production environment or commerical use.**
 
 
 ### Install ngrok on Raspberry Pi

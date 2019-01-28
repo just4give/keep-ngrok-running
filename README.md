@@ -34,12 +34,15 @@ sudo chmod +x keepalive_ngrok.sh
 ```
 
 ### Setup cron job to execute the shell script
-We are going to setup our cron job to execute the shell script every hour. If you want to change the schedule, please check _run_ngrok method in keepalive_ngrok.py
+We are going to setup our cron job to execute the shell script every our at 59 minutes. If you want to change the schedule, please check _run_ngrok method in keepalive_ngrok.py
 
 ```
-sudo crontab -e
+crontab -e
 ```
 
 Then add following entries to the crontab, save and exit. 
 
-
+```
+59 * * * * sh /home/pi/keepalive_ngrok.sh &
+@reboot sh /home/pi/keepalive_ngrok.sh &
+```

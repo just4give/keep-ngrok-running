@@ -10,6 +10,8 @@ import datetime
 
 #path where you have extracted ngrok execution file. Follow readme file to install on Pi
 ngrokDir="/home/pi" 
+#change the port which you want to tunnel through ngrok
+port='5000'
 
 #set it False if you don't want to update ngrok url to dynamoDB
 #you don't need any of below variables in that case 
@@ -62,7 +64,7 @@ def _run_ngrok():
     global ngrokDir
     command = "ngrok"
     executable = str(Path(ngrokDir, command))
-    ngrok = subprocess.Popen([executable, 'http', '-inspect=false','-bind-tls=true', '5000'])
+    ngrok = subprocess.Popen([executable, 'http', '-inspect=false','-bind-tls=true', port])
     atexit.register(ngrok.terminate)
     time.sleep(3)
     tunnel_url = requests.get(localhost_url).text  # Get the tunnel information
